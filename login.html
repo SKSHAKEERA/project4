@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1><center><title>LOGIN FORM></title></center></h1>
+        
+        <script>
+            // User Validations
+    function loginValidation() {
+                // Ramesh
+      var uname = document.myform.username.value;
+                 //Ramesh@123
+      var password = document.myform.password.value;
+                if(uname==null || uname=="") {
+                  alert("Name cant be blank")
+                  return false;  
+               } else if (password.length<6){
+                  alert("Password Must be 6 letters")
+                  return false;
+               }  
+               return true                 
+            }           
+         </script>
+         
+    </head>
+    <style>
+        body{
+            background-size: cover;
+        }
+        h1{
+          color: blue;
+        }
+          /*  Smart phone      */
+                  
+          @media screen and (min-width:320px )  {
+
+body {
+     background-color: rgb(9, 226, 81);
+}
+}
+/*  Tablet,ipad      */    
+
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: rgb(177, 48, 48);
+}
+}
+
+/* Desktops and Laptops asfsdf     */    
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: rgb(73, 16, 231);
+}
+}
+
+/* Large Screens---------  */
+@media Screen and (min-width:1824px) {
+body {
+     background-color: rgb(30, 226, 56);
+}
+}
+h2{
+     color: rgb(94, 11, 230);
+}
+        </style>
+                   <center><body background="c:\Users\DELL\Documents\WhatsApp Image 2024-06-01 at 20.16.33_734e79ab.jpg">
+                    <h2>Login Page</h2>  
+                    <form name="myform" action="sucess.html" 	onsubmit="return loginValidation(this)">
+                     
+                    User Name : <input type="text" name="username"autofocus> <br>
+                    Password :  <input type="password" name="password"> <br>
+                             <input type="submit" value="Submit">     
+                              
+                            </form>
+                       </body></center>
+                    </html>
+                    
+    
